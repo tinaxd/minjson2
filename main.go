@@ -71,11 +71,11 @@ func main() {
 	default:
 		if *mode == "" {
 			fmt.Fprintln(os.Stderr, "mode is not set.")
-			fmt.Fprintln(os.Stderr, "available modes: minify")
+			fmt.Fprintln(os.Stderr, "available modes: minify pretty")
 			os.Exit(1)
 		} else {
 			fmt.Fprintf(os.Stderr, "unknown mode: %s\n", *mode)
-			fmt.Fprintln(os.Stderr, "available modes: minify")
+			fmt.Fprintln(os.Stderr, "available modes: minify pretty")
 			os.Exit(1)
 		}
 	}
