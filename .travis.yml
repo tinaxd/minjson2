@@ -1,0 +1,13 @@
+os: windows
+language: go
+go:
+- '1.13'
+deploy:
+  provider: releases
+  api_key:
+    secure: Kq6HRoQwTrFYFtjxFPVQRJZIwQLt/LQ96ByAY7Ssh8sh1PNhqI/Qb7xo+VdnHliihtewn3rmtzFinOgK+rC+xcNqVjAyYyRZdo7h13TYJiD1zHIynsJpOLqRDC9ZEg5XFcTXf8BbKce8nUSz1TJvRv6WiTOVZE7V1HkQgh2rQPxcJmsIfdr7cVIevt2WWCmmGzwzzmY1zhW43WxBdTbAS4bOlgAtQg6n2+zKn/xiJWJpmqoXz7yPFsTO5f+9f3Deavkzfem4AP9GpX/xsLu7uGtmbDEtP3dCKkhz/i85Vex6Q/F7UgXIXJe6aqoodLWyNGzOjPGozaVJS1w85t0YCrBCI0dCi0t8JBW5KmLohalX+WDQSsb3queB3qh8qwLFtbXWwkUA/wlFqVT074emOdcbrvpeEukQ1ag7dgb9Y/wJdoSUuYKffABzcaVofdtELA19SRsz+iCEsR1dzZe4AJui8+fB3mbmG2dNJadGdof3F3r7MonU866LskBWTJbr6ZaPnmTHDzphSCYw3Y4+i4KDOP4C1zOP3/Ke5w/6EtTCyMwiupoOwNilnQEg/O8rWRygPNaCOIItC337qpmRq4ZTf5xbUxpzx2dhXSQs51P1m+gWZ2lYn0279pfr+xv9F6vfI/ZtIZNohWxEIuB6X+cR4Jp76AOz92yMImIkUVw=
+  file: minjson2
+  skip_cleanup: true
+  on:
+    repo: tinaxd/minjson2
+    tags: true
